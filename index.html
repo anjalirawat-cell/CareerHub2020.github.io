@@ -299,22 +299,31 @@
 </div>
 
 <br><br>
-
-<div class="section-container">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
+<!--counter-->
+<div class="containerc">
+    <div class="row">
+        <div class="col-md-12">
                 <h2 class="text-center">Statistics</h2>
             </div>
-            <div class="col-md-4">Counter 1 - Number of successful digital counsellings
+        <div class="four col-md-4">
+            <div class="counter-box colored"> <i class="fa fa-thumbs-o-up"></i> <span class="counter">100</span>
+                <p>No of positive feedback</p>
             </div>
-            <div class="col-md-4">Counter 2 - Number of positive feedbacks
+        </div>
+        <div class="four col-md-4">
+            <div class="counter-box"> <i class="fa fa-group"></i> <span class="counter">500</span>
+                <p>Number of visits to website</p>
             </div>
-            <div class="col-md-4">Counter 3 - ...
+        </div>
+        <div class="four col-md-4">
+            <div class="counter-box"> <i class="fa fa-user"></i> <span class="counter">100</span>
+                <p>Successful counselling</p>
             </div>
         </div>
     </div>
 </div>
+              
+
 
 <br><br>
 
@@ -331,6 +340,23 @@ document.addEventListener("DOMContentLoaded", function (event) {
               <script>
               new WOW().init();
               </script>
+ <!--counter-->
+ <script type='text/javascript'>$(document).ready(function() {
+
+$('.counter').each(function () {
+$(this).prop('Counter',0).animate({
+Counter: $(this).text()
+}, {
+duration: 4000,
+easing: 'swing',
+step: function (now) {
+$(this).text(Math.ceil(now));
+}
+});
+});
+
+});</script>
+
 
 <footer class="footer-container">
     <div class="container">

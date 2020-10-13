@@ -24,12 +24,16 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!--for counter-->
+   <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+                                <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+                                <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script>
 
   <title>CareerHub- Guidance For Courses</title>  
 
 <link href="./assets/style.css" rel="stylesheet"></head>
 
-<body style="text-align:justify; text-align-last:center">
+<body style="text-align:justify; text-align-last:center" oncontextmenu='return false' class='snippet-body'>
 
  <!-- Add your content of header -->
     <header class="container-fluid">
@@ -103,21 +107,21 @@
                     <i class="fa fa-line-chart fa-2x" aria-hidden="true"></i>
                 </div>
                 <h3 class="text-center">Anjali</h3>
-                <p>I was always excited about the computer classes and labs in the school. Later, I chose computers as one of my subjects in school and since I was into programming, I picked web designing as my course in college. Learning a new language is always challenging and with a computer language, your mind starts thinking logically, which is the best part. I love working on gaining more knowledge and improving my skills.</p>
+                <p>Our mission is to help out students who want to know their options for higher studies, with exact, to the point details.</p>
             </div>
             <div class="col-xs-12 col-md-4 wow animate__animated animate__fadeInUp">
                 <div class="fa-container">
                     <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
                 </div>
                 <h3 class="text-center">Shreya</h3>
-                <p>I got really amazed when I first used HTML and saw the changes reflect on the browser window, it felt like magic. Since then I’ve been keen on learning various aspects of web development. I love working on the front end, but my passion is dancing. I love to juggle between academics and extracurricular, it’s fun.</p>
+                <p>Our vision is a website which is a complete stopage for every college related guidance.</p>
             </div>
             <div class="col-xs-12 col-md-4 wow animate__animated animate__fadeInUp">
                 <div class="fa-container">
                     <i class="fa fa-user fa-2x" aria-hidden="true"></i>
                 </div>
                 <h3 class="text-center">Nishtha</h3>
-                <p>When I was a kid I was always fascinated by computers around me and wanted to do anything I could. My first proper interaction with computers was when I was in 3rd, through a small course in Bal Bhawan. The first computer language I learned was HTML. My focus presently is on exploring as much as I can, to work with different languages and applications, and do well in the field.</p>
+                <p>Our team is a group of 5 members, who worked on different parts of the website to make it happen.</p>
             </div>
         </div>
         <br><br>
@@ -127,14 +131,14 @@
                     <i class="fa fa-line-chart fa-2x" aria-hidden="true"></i>
                 </div>
                 <h3 class="text-center">Twinkle</h3>
-                <p>I am a graphic designer with interests in sketching and music. My stream in 12th standard was Science with Computers. Being a self taught graphic designer, I am always exploring new things about my passion. Graphics attracted me because I love to draw and use my creative mind.</p>
+                <p>Our mission is to help out students who want to know their options for higher studies, with exact, to the point details.</p>
             </div>
             <div class="col-xs-12 col-md-4 wow animate__animated animate__fadeInUp">
                 <div class="fa-container">
                     <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
                 </div>
                 <h3 class="text-center">Yukti</h3>
-                <p> I did my class 12th with biology and maths. So when I picked this field, it was entirely new for me but it also looked very appealing, therefore I started learning it from scratch. I love listening to music, and sometimes, I like to draw. I am really looking forward in this field.</p>
+                <p>Our vision is a website which is a complete stopage for every college related guidance.</p>
             </div>
         </div>
     </div>
@@ -165,21 +169,30 @@
 
 <br><br>
 
-<div class="section-container">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
+<!--counter-->
+<div class="containerc">
+    <div class="row">
+        <div class="col-md-12">
                 <h2 class="text-center">Statistics</h2>
             </div>
-            <div class="col-md-4">Counter 1 - Number of successful digital counsellings
+        <div class="four col-md-4">
+            <div class="counter-box colored"> <i class="fa fa-thumbs-o-up"></i> <span class="counter">100</span>
+                <p>No of positive feedback</p>
             </div>
-            <div class="col-md-4">Counter 2 - Number of positive feedbacks
+        </div>
+        <div class="four col-md-4">
+            <div class="counter-box"> <i class="fa fa-group"></i> <span class="counter">500</span>
+                <p>Number of visits to website</p>
             </div>
-            <div class="col-md-4">Counter 3 - ...
+        </div>
+        <div class="four col-md-4">
+            <div class="counter-box"> <i class="fa fa-user"></i> <span class="counter">100</span>
+                <p>Successful counselling</p>
             </div>
         </div>
     </div>
 </div>
+              
 
 <br><br>
 
@@ -196,6 +209,23 @@ document.addEventListener("DOMContentLoaded", function (event) {
               <script>
               new WOW().init();
               </script>
+
+<!--counter-->
+ <script type='text/javascript'>$(document).ready(function() {
+
+$('.counter').each(function () {
+$(this).prop('Counter',0).animate({
+Counter: $(this).text()
+}, {
+duration: 4000,
+easing: 'swing',
+step: function (now) {
+$(this).text(Math.ceil(now));
+}
+});
+});
+
+});</script>
 
 
 <footer class="footer-container">
